@@ -41,3 +41,59 @@ void setup() {
 }
 
 void loop() {}
+```
+
+------
+
+### `IMPLEMENTATION`
+```markdown
+# 🔍 Implementation Details — SDVirtualRAM
+
+This document explains the inner workings of the `SDVirtualRAM` library.
+
+----
+
+## 📦 Core Concept
+Since microcontrollers have **very limited SRAM**, this library uses an **SD card file (`VRAM.BIN`)** to act as an extended memory space.  
+All read/write operations are redirected to this file, simulating virtual memory.
+
+-----
+
+## ⚙️ How It Works
+1. **Initialization (`begin`)**
+   - Initializes the SD card with `SdFat`.
+   - Opens or creates a binary file (`VRAM.BIN`).
+   - Expands it to the defined size (`VRAM_SIZE_BYTES`).
+
+2. **Read/Write Operations**
+   - Byte access:
+     ```cpp
+     uint8_t readByte(uint32_t addr);
+     bool writeByte(uint32_t addr, uint8_t val);
+     ```
+   - Block access:
+     ```cpp
+     bool read(uint32_t addr, uint8_t* buffer, size_t len);
+     bool write(uint32_t addr, const uint8_t* buffer, size_t len);
+     ```
+
+3. **Address Validation**
+   - Ensures requested addresses do not exceed the defined VRAM size.
+
+4. **Formatting**
+   - Deletes and recreates `VRAM.BIN` for a clean reset.
+
+-----
+
+## 📊 Performance Notes
+- **Speed** is limited by SD card SPI throughput (~100–500 KB/s on most Arduinos).
+- Best suited for **bulk storage**, not high-speed RAM replacement.
+- Use **larger block operations** for better performance.
+
+-----
+
+## 🔮 Future Improvements
+- Add support for wear-leveling (extend SD card life).
+- Implement a caching layer for faster random reads/writes.
+- Option to define **multiple VRAM files**.
+----
