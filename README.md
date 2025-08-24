@@ -24,7 +24,7 @@ Designed for **resource-constrained devices** like Arduino UNO, Mega, ESP32, etc
 
 ## 📂 Structure
 
-- crc.h,cpp 	        → 	CRC16 checksum functions
+- crc16.h,cpp 	        → 	CRC16 checksum functions
 - SHA1.h,cpp         	→ 	SHA1 hashing implementation
 - SDVirtualRAM.h,cpp 	→ 	Virtual RAM over SD card
 
