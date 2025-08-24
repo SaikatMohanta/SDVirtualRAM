@@ -1,0 +1,32 @@
+#######################################
+# SDVirtualRAM Arduino IDE library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+SDVirtualRAM	→   KEYWORD1
+SHA1_CTX        →   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin           →   KEYWORD2
+readByte        →   KEYWORD2
+writeByte       →   KEYWORD2
+read            →   KEYWORD2
+write           →   KEYWORD2
+format          →   KEYWORD2
+size            →   KEYWORD2
+crc16           →   KEYWORD2
+SHA1_Init       →   KEYWORD2
+SHA1_Update     →   KEYWORD2
+SHA1_Final      →   KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+VRAM_SIZE_BYTES     →   LITERAL1
+SDVIRTUALRAM_CS_PIN →   LITERAL1
+
+
