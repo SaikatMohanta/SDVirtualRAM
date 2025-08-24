@@ -1,7 +1,7 @@
-# 🧰 Arduino Virtual RAM Toolkit
+# 🧰 SDVirtualRAM - An Arduino Virtual RAM Toolkit
 --------------------
 
-A lightweight Arduino library that brings **extended memory**, **data integrity**, and **cryptographic hashing** to your microcontroller projects.  
+A lightweight Arduino library that brings **extended page memory**, **data integrity**, and **cryptographic hashing** to your microcontroller projects.  
 This toolkit combines:
 
 - 📦 **SDVirtualRAM** — emulate large virtual RAM using an SD card  
@@ -24,11 +24,11 @@ Designed for **resource-constrained devices** like Arduino UNO, Mega, ESP32, etc
 
 ## 📂 Structure
 
-crc.h,cpp 	        → 	CRC16 checksum functions
-SHA1.h,cpp         	→ 	SHA1 hashing implementation
-SDVirtualRAM.h,cpp 	→ 	Virtual RAM over SD card
+- crc.h,cpp 	        → 	CRC16 checksum functions
+- SHA1.h,cpp         	→ 	SHA1 hashing implementation
+- SDVirtualRAM.h,cpp 	→ 	Virtual RAM over SD card
 
-Demo usage 	        →  	examples/SD_Manager_example/SD_Manager_example.ino
+- Demo usage 	        →  	examples/SD_Manager_example/SD_Manager_example.ino
 
 
 --------
