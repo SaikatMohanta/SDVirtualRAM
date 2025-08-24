@@ -24,11 +24,11 @@ Designed for **resource-constrained devices** like Arduino UNO, Mega, ESP32, etc
 
 ## 📂 Structure
 
-crc.h,cpp 	→ 	CRC16 checksum functions
-SHA1.h,cpp 	→ 	SHA1 hashing implementation
-SDVirtualRAM.* 	→ 	Virtual RAM over SD card
+crc.h,cpp 	        → 	CRC16 checksum functions
+SHA1.h,cpp         	→ 	SHA1 hashing implementation
+SDVirtualRAM.h,cpp 	→ 	Virtual RAM over SD card
 
-Demo usage 	→	examples/SD_Manager_example/SD_Manager_example.ino
+Demo usage 	        →  	examples/SD_Manager_example/SD_Manager_example.ino
 
 
 --------
@@ -38,13 +38,13 @@ Demo usage 	→	examples/SD_Manager_example/SD_Manager_example.ino
 ### 1. Requirements
 - Arduino IDE or PlatformIO  
 - [SdFat library](https://github.com/greiman/SdFat) for SD card support  
-- MicroSD card module + formatted card with FAT32 system
+- MicroSD card module + formatted micro-SD card with FAT32 system
 
 ### 2. Installation
 Clone this repo into your Arduino `libraries/` folder:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Arduino-VirtualRAM-Toolkit.git
+git clone https://github.com/SaikatMohanta/SDVirtualRAM.git
 ```
 
 -------------
