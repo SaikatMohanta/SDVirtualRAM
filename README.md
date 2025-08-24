@@ -18,16 +18,16 @@ Perfect for memory-constrained microcontrollers like the **Arduino Uno, Nano, Me
 ----
 ##🛠 Potential Use Cases
 
--Simulating large memory buffers (images, sensor logs, audio samples).
--Creating temporary data caches on SD card.
--Emulating RAM expansions for retro projects.
--Logging and retrieving structured data.
+- Simulating large memory buffers (images, sensor logs, audio samples).
+- Creating temporary data caches on SD card.
+- Emulating RAM expansions for retro projects.
+- Logging and retrieving structured data.
 
 ------
 ##📐 Requirements
--Arduino IDE 1.8+ 
--SdFat Library
--SD card module with SPI interface
+- Arduino IDE 1.8+ 
+- SdFat Library
+- SD card module with SPI interface
 
 ------
 ## 🚀 Getting Started
