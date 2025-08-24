@@ -10,10 +10,10 @@ Perfect for memory-constrained microcontrollers like the **Arduino Uno, Nano, Me
 -----
 
 ## ✨ Features
-- 📦 **Virtual Address Space** — Define a custom RAM size (default: `256 KB`).
-- 🔄 **Random Access Reads/Writes** — Byte or block level access.
-- 🧹 **Formatting Support** — Reset the virtual RAM file instantly.
-- 💡 **Plug & Play** — Minimal setup, just connect your SD module.
+- 📦 **Virtual Address Space** — Define a custom RAM size (default: `256 KB`)
+- 🔄 **Random Access Reads/Writes** — Byte or block level access
+- 🧹 **Formatting Support** — Reset the virtual RAM file instantly
+- 💡 **Plug & Play** — Minimal setup, just connect your SD module
 
 ----
 ##🛠 Potential Use Cases
